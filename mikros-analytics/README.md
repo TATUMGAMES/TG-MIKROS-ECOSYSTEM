@@ -2,9 +2,7 @@
 
 MIKROS Analytics is Tatum Games' game analytics and player-intelligence platform.
 
-It was built around a simple problem:
-
-Most analytics platforms can tell a developer what is happening inside that developer's own game.
+It was built around a simple problem: Most analytics platforms can tell a developer what is happening inside that developer's own game.
 
 MIKROS is designed to provide additional context by using an information-sharing and data-pooling ecosystem, allowing participating developers to understand their performance and users in relation to broader anonymized ecosystem data.
 
