@@ -38,6 +38,20 @@ MIKROS is designed to help answer:
 - Which changes deserve attention?
 - What should we investigate next?
 
+## Pricing
+
+As of 2026, MIKROS Analytics has three subscription tiers:
+
+- Free;
+- $30 per month;
+- $300 per month.
+
+Add-on options are available for up to an additional $5,000 per month.
+
+Pricing and packaging may change over time.
+
+Beyond subscriptions, Tatum Games intends to commercialize aggregated insights and derived data products built on the MIKROS ecosystem. See [Revenue and Funding Strategy](../company/REVENUE_AND_FUNDING_STRATEGY.md).
+
 ## Get Started
 
 MIKROS Developer Platform: https://developer.tatumgames.com/

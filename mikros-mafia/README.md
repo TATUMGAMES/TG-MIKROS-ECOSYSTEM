@@ -37,6 +37,8 @@ It can support:
 - connecting developers with distribution opportunities;
 - and MIKROS Mafia engagement.
 
+For MIKROS Marketing campaigns with daily spend of $35 or more, MIKROS Bot runs coordinated, story-driven messaging in MIKROS Mafia and participating partner Discord servers. See [Campaign Lifecycle and Benefits](../mikros-marketing/campaign-lifecycle.md).
+
 ## Community-Driven Distribution
 
 The long-term goal is not merely to operate a Discord server.

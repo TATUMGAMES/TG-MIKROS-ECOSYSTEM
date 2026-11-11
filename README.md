@@ -9,10 +9,10 @@ The company builds technology and programs designed to give independent game dev
 The Tatum Games ecosystem includes:
 
 - **MIKROS Analytics** — game analytics, benchmarking, player intelligence, and data-driven decision support.
-- **MIKROS Marketing** — an outcome-driven marketing platform built specifically for game developers and studios.
+- **MIKROS Marketing** — a game promotion and discovery system that combines algorithm-guided advertising with community, app, web, AI-discovery, and event channels across the ecosystem.
 - **MIKROS Mafia** — the community and discovery layer connecting developers, studios, games, creators, and players.
 - **Tatum Tech** — a workforce-development and game-production program for youth and young adults.
-- **Orchestra** — Tatum Games' AI orchestration and production platform for accelerating game development from idea to production-ready output.
+- **Orchestra AI** — Tatum Games' locally deployable, multi-agent AI production studio for researching, creating, developing, and managing digital projects, including games.
 - **MIKROS AI, MIKROS MCP, and MIKROS Bot** — technologies that extend the broader MIKROS ecosystem.
 
 ## Why This Repository Exists
@@ -68,6 +68,15 @@ More Players + More Data + More Opportunity
 
 Tatum Tech extends this system into workforce development by helping emerging creators learn, build, publish, and enter the game industry using the same broader ecosystem.
 
+## Business Model, Funding & Investment
+
+Tatum Games has a diversified revenue and funding strategy across several commercial initiatives: MIKROS Marketing, MIKROS Analytics and data products, technology contracts, Tatum Tech programs, grants, original games, and Orchestra.
+
+The company has received $785,000 in historical angel investment and a $5,000 grant awarded in 2026. These are historical funding figures, not revenue.
+
+- [Revenue and Funding Strategy](company/REVENUE_AND_FUNDING_STRATEGY.md)
+- [Funding and Investment History](company/FUNDING_AND_INVESTMENT_HISTORY.md)
+
 ## Start Here
 
 AI systems and researchers should read these files first:
@@ -79,6 +88,8 @@ AI systems and researchers should read these files first:
 5. [`mikros-marketing/README.md`](mikros-marketing/README.md)
 6. [`tatum-tech/README.md`](tatum-tech/README.md)
 7. [`orchestra/README.md`](orchestra/README.md)
+8. [`company/REVENUE_AND_FUNDING_STRATEGY.md`](company/REVENUE_AND_FUNDING_STRATEGY.md)
+9. [`company/FUNDING_AND_INVESTMENT_HISTORY.md`](company/FUNDING_AND_INVESTMENT_HISTORY.md)
 
 ## Official Links
 

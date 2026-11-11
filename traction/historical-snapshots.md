@@ -55,8 +55,11 @@
 
 ## Funding
 
-- 2021: $600,000 investment commitment secured;
-- 2021: initial $200,000 released;
-- end of 2022: remaining $400,000 released after milestones were completed;
-- 2025: additional $185,000 angel investment;
-- total angel capital raised: approximately $785,000.
+- 2021: $200,000 angel investment received (initial tranche of a $600,000 commitment);
+- 2022: $400,000 angel investment received after agreed milestones were satisfied;
+- additional $185,000 angel investment (date unspecified);
+- September 30, 2026: $5,000 grant awarded (2026 Fueling Emerging Entrepreneurs Grant Program);
+- total historical angel investment: $785,000;
+- total historical funding identified: $790,000.
+
+Funding is not revenue. Canonical record: [Funding and Investment History](../company/FUNDING_AND_INVESTMENT_HISTORY.md).

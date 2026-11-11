@@ -1,150 +1,194 @@
-# Orchestra Capabilities
+# Orchestra AI Capabilities
 
-Orchestra is designed as a multi-modal production system.
+Orchestra AI is a locally deployable, multi-agent AI production studio. It researches, creates, develops, and manages complete digital projects using local AI models and optional cloud services.
 
-The platform has been developed across a broad set of capabilities.
+This page describes what Orchestra is built to do. Most capabilities are implemented and under active verification. Some depend on the user's hardware, installed tools, or optional provider accounts, and capabilities still in development are labeled as such.
 
-## 1. Chat and Reasoning
+## 1. Local-First AI Runtime
 
-- conversational interaction;
-- streaming responses;
-- conversation memory;
-- optional web research;
-- structured sources;
-- rich Markdown;
-- code;
-- math;
-- charts;
-- graphs;
-- media rendering.
+- Orchestra can run entirely on local models with no cloud key. It has built complete games on a single workstation using only local models.
+- Local models run through Ollama, and Orchestra reports whether each model is installed, running, and answering.
+- If one local model fails, work moves to the other, and the reply says so.
+- Local language, image, and video models take turns on the GPU, so they don't fail by competing for memory.
+- Cloud providers are optional. Supported providers include Anthropic Claude, Google Gemini, Qwen, Kimi, and Stability AI.
+- Orchestra routes each request by the capability it needs, not by vendor. When several models qualify, it compares tool support, context size, reasoning level, and cost.
+- Each agent role in a build can use the model best suited to it. Every model call is recorded with its role, provider, and result.
+- When a user names a provider, Orchestra uses it for that task. If that provider fails, Orchestra offers a fallback instead of switching silently.
+- A request for local generation is never moved to a paid cloud provider without the user's say.
+- One status view shows each provider as Connected, Not validated, Authentication failed, Unavailable, or Not configured. A saved key isn't treated as working until a free check confirms it.
+- Runtime Setup guides installation of the local runtime. Nothing is installed without approval, and nothing already present is reinstalled.
+- Orchestra runs as a workstation application with a web interface, a command-line interface, and a desktop interface. Concurrent builds are queued, and each queued build shows its place in line.
 
-## 2. Coding
+## 2. Chat and Reasoning
 
-Orchestra can support structured coding workflows with:
+- Chat with streaming responses and per-conversation memory.
+- Optional web search with structured sources.
+- Rich Markdown rendering, including code, math, tables, charts, graphs, and media.
+- Word, character, and page-length requests such as "under 200 words" are understood and enforced.
+- Orchestra decides whether a question needs retrieval and from where: the conversation, the project, assets, Tatum Games knowledge, the web, or the full research engine.
+- Simple questions are answered directly without starting a multi-agent workflow.
+- Every conversation keeps a stable identity and is stored on the server. Chats survive browser crashes and reloads.
+- `/clear` resets a chat's context without touching its project, files, or other conversations.
+- **Project Notes** are reusable Markdown guidance. Orchestra loads the relevant notes automatically based on the kind of work (coding, games, writing, grants, research, images, audio, and more).
 
-- planning;
-- specialized agents;
-- iterative writing;
-- review;
-- deliberation;
-- QA;
-- validation;
-- repair loops;
-- and scored quality gates.
+## 3. Research
 
-## 3. Agent Management
+- **Multi-query research engine:**
+  - expands a question into complementary subqueries;
+  - searches in parallel with no paid search API required (DuckDuckGo, with optional self-hosted SearXNG);
+  - reads full pages and extracts key points per source;
+  - removes duplicates, ranks results, and writes a synthesized answer.
+- **Current information:** time-sensitive questions are checked against recent, dated sources. Orchestra doesn't fall back on older training knowledge when current evidence is missing.
+- **Contextual research:** for historical, cultural, and comparative questions, Orchestra plans research around the subject's origins and communities. It records where each source comes from, audits coverage, and removes citations that don't support the answer.
+- **Grants research:** finds grant opportunities with eligibility criteria, deadlines, funding amounts, and location relevance.
+- **Game research:** produces structured game-design reports covering core mechanics, player loop, monetization models, comparable titles, design risks, and recommendations.
+- **Game market intelligence:** collects dated snapshots of storefront data to identify trends over time. Steam is the first source. It does not simply copy whatever is currently the top seller.
+- **Prospecting objectives:** researches qualified prospects once or on a schedule, for example weekly for three months. Each prospect gets a fit rating, sources, a suggested approach, and a draft message the user can edit. Orchestra never sends email or contacts anyone.
 
-Orchestra can coordinate managed and ad-hoc specialized agents.
+## 4. Writing and Documents
 
-The purpose is to divide complex work across roles rather than forcing a single model response to perform every task.
+- Long-form professional writing through structured workflows.
+- Grant proposals, including research, STEM education, nonprofit, and technology grant formats.
+- Legal-style documents such as NDAs, contracts, policies, and agreements, drafted from a description and jurisdiction.
+- Structured documents exported to Markdown, Word (DOCX), and PDF.
 
-## 4. Image Generation
+## 5. Coding
 
-Orchestra can route image-generation tasks through configurable backends and can use reference imagery when needed.
+- **AI coding team:** plans the work, assigns specialized agents, writes files, reviews, deliberates, and runs QA in iterations.
+- **Code search before generation:** Orchestra maps and searches the repository first and sends the model only the context it needs.
+- **Validation and quality gates:** deterministic validation checks:
+  - structure;
+  - dependency policy;
+  - security heuristics;
+  - architecture rules.
+  
+  Each iteration also gets a 1–100 quality score with hard gates. Work that fails goes back to the team through bounded repair loops.
+- **Code change review:** shows exactly which files Orchestra changed, with line counts. Edits the user made aren't claimed as Orchestra's, and a revert won't overwrite a newer user edit.
+- **Previews and file analysis:** playable HTML5 preview, plus summarizing or rewriting files inside a project.
 
-## 5. Video Generation
+## 6. Multi-Agent Teams and Persistent Projects
 
-Video-generation requests can be delegated to configurable workers.
+- **Persistent AI teams:** major requests spawn project-specific teams with roles generated for the work. Agents carry experience points and levels.
+- **Agent Activity:** shows each agent's real status (working, waiting, blocked, or finished), the active task, and a full orchestration log.
+- **Agent huddles:** agents can publish planning discussions, and the user can join the conversation to approve, reject, or redirect the plan.
+- **Unified project lifecycle:** projects move through 22 explicit states, from discovery and planning through implementation, validation, repair, and completion. Stalled and deadlocked work is detected separately.
+- **Project Execution Engine (PEX):** a persistent runtime for long-running work. Major coding, game-development, and multi-agent requests become resumable projects with checkpoints, watchdog recovery, and auto-resume after a restart.
+- **Background tasks:** builds, coding runs, media jobs, and research run in the background so chat stays usable. Stop actually stops the work, and tasks interrupted by a restart are marked as interrupted, not left "running."
+- **Team experience:** a problem QA found and a later playtest confirmed fixed becomes a validated lesson that future builds of the same genre receive.
+- **Honest progress:** progress and completion come from real evidence, such as files on disk, validated deliverables, and completion gates. They aren't model-generated narrative. A build with required work still open is never reported as 100% complete.
+- **Readable project folders:** each project's folder is named after the project and can be opened or copied from the interface.
 
-## 6. Speech, Sound, and Music
+## 7. Game Development
 
-Orchestra separates:
+- **Game understanding:** a game request becomes a structured understanding, covering genre (including hybrids), setting, required systems, scope, and presentation. References are read as characteristics, never copied.
+- **Game specification:** the request's requirements become acceptance criteria. Each build is checked against them by code checks and an independent reviewing model, and a project can't complete while a requirement is unmet.
+- **Game development loop:**
+  - a Game Designer writes the design;
+  - a Technical Architect writes the plan;
+  - a Game Developer builds one playable slice at a time;
+  - QA plays each slice in a headless browser;
+  - a Repair Agent fixes what QA finds.
+  
+  Builds can be stopped, paused, and resumed from kept work.
+- **Browser game generation:** a plain-language idea becomes a playable browser game:
+  - vanilla HTML5 canvas for simple and idle games;
+  - Phaser for medium-complexity 2D games;
+  - Ren'Py for visual novels when it is installed or requested.
+  
+  Builds include title screens, pause menus, win and lose flows, difficulty progression, accessibility, audio synthesized in code, and saved high scores. Follow-up requests like "add a boss fight" produce a new version of the same game.
+- **Creative lead mode:** when the user gives creative freedom, Orchestra picks the genre and engine, researches, compares distinct concepts, and prototypes the core loop. An Idea Agent remembers past concepts to keep ideas varied.
+- **Game production package:** a lean set of production documents fitted to the game, such as vision, design, technical design, QA, and monetization. Player-facing documents, such as guides, character pages, story, world, and FAQ, are written from the actual build and checked for consistency with the code.
+- **Game design knowledge:** a versioned catalog of genres, reusable systems, and themes, with citations to established design frameworks.
+- **Originality:** reference material is used for patterns only. Distinctive third-party characters, marks, and one-to-one remakes are refused unless the rights are explicit.
+- **Honest outcomes:** if no model can produce the game, the project fails visibly and can be retried. A placeholder game is never presented as the result.
 
-- speech;
-- sound effects;
-- and music generation
+## 8. Game Engines, Platforms, and Integrations
 
-so each can use the appropriate workflow.
+- **Engine detection and setup:** Orchestra detects missing engine dependencies (Unity, Unreal, Blender, Ren'Py), shows a guided setup checklist, and installs MCP bridge packages where safe. HTML5 game generation works without any external engine.
+- **Engine automation:**
+  - Unity: batch-mode builds and test runs, and scaffolded projects created through an editor bridge;
+  - Unreal: build-and-cook automation and headless tests;
+  - Blender: headless asset export.
+  
+  Orchestra never migrates a project to another engine version without approval. Real engine installs are still being tested.
+- **Capability-based tool choice:** Orchestra reasons about game-development capabilities, such as 2D, 3D, sprites, rigging, audio, testing, builds, and analytics. It then picks an installed, trusted tool that provides them, and never silently swaps a tool the user chose.
+- **MCP client:** Orchestra can use Model Context Protocol servers. Schema changes are reviewed before use.
+- **MIKROS MCP:** Orchestra treats [MIKROS MCP](../technology/mikros-mcp.md) as first-party knowledge, so it plans MIKROS integrations as official MIKROS MCP tool calls instead of guessing SDK code.
+- **Dependency maintenance:** technical knowledge is version-aware and checked monthly for changes. Project dependencies update only under policy, behind a build check, and with rollback.
+- **Native mobile (in development):**
+  - a tool registry and provisioning manager for Android and iOS toolchains;
+  - a generator for a buildable native Android project;
+  - iOS project generation not yet available.
+- **Meta wearables (in development):** games can target Meta Ray-Ban Display web apps, the Device Access Toolkit for phone apps, or Quest VR, based on Meta's published developer documentation. Device input is simulated until the game runs on hardware.
+- **3D physics:** physics engines are chosen to fit the project's requirements, including optional Box3D support.
 
-## 7. UI/UX Generation
+## 9. Images, Visual Assets, and 3D
 
-Natural-language product descriptions can be converted into rendered UI/UX concepts and mockups.
+- **Image generation** through a local ComfyUI server, a dedicated image worker, or Stability AI in the cloud, with automatic fallback in that order. Multi-image batches are supported, and generation runs in the background without blocking chat.
+- **Visual model registry:** local checkpoints and LoRAs are catalogued with type, tags, license, and install state, and matched to each request. Missing models are reported, never downloaded automatically.
+- **Unified visual generation:** visual requests are classified as sprite, animation, object, environment, cinematic, or game scene. Each type follows its own workflow, including multi-frame animation and sprite sheets.
+- **Asset intelligence:**
+  - makes game assets reusable and relational instead of isolated files;
+  - identifies entities, groups visual variants, and recognizes animation families;
+  - builds sprite sheets and keeps palette and reference information for consistency;
+  - exports metadata for Unity, Godot, and RPG Maker.
+- **Sprite and character animation provider (optional):** users can connect a Spriterrific account for consistent animated 2D characters and sprite sheets. Local sprite generation remains the default. Every paid job is estimated, checked against the user's cost policy, and approved before it runs.
+- **Text-to-3D:** a description becomes a concept image, then a textured 3D model. The model is validated and exported in engine-ready formats through Blender when installed.
+- **UI/UX design generation:** natural-language product descriptions become rendered UI/UX mockups.
+- **Comic generation:** a story idea becomes a multi-panel comic with panel art and narration.
 
-## 8. Comic Generation
+## 10. Video (In Development)
 
-A story concept can be transformed into multi-panel comic structures with panel descriptions and narration.
+- Video requests go to configurable local or remote video workers.
+- Local video runs through versioned ComfyUI workflows, including text-to-video and keyframe slideshows. Orchestra checks the workflows against what is actually installed and reports exactly what is missing.
+- A request for a still image is never treated as video, and a disabled video capability never blocks image generation.
+- Reliable end-to-end video generation is not yet verified on every setup.
 
-## 9. Game Research
+## 11. Speech, Sound, and Music
 
-Orchestra can create structured game-design research from a topic, mechanic, genre, or development question.
+- Speech, sound effects, and music are handled separately so each uses the right workflow.
+- **Speech:** text-to-speech, plus transcription, captioning, and audio watermarking utilities.
+- **Music and long-form audio:** run through dedicated generation workers.
 
-## 10. Screen Awareness
+## 12. Screen Awareness
 
-Orchestra can analyze a user's screen or supplied visual context through multimodal models.
+Orchestra can analyze the user's screen, a region of it, or a supplied image using a vision-capable model.
 
-## 11. Multi-Query Research
+## 13. Tatum Games Knowledge and Self-Description
 
-The research engine can:
+- Orchestra keeps first-party knowledge of Tatum Games, MIKROS, and Orchestra, refreshed from this repository and the MIKROS MCP repository.
+- That knowledge carries its provenance and authority level.
+- Orchestra won't claim to have reviewed a repository it didn't retrieve.
+- When asked about itself, Orchestra explains its multi-agent approach and game-development specialization, keeping product capabilities separate from what is currently running.
 
-- expand a question into multiple subqueries;
-- search in parallel;
-- retrieve source material;
-- extract relevant information;
-- deduplicate;
-- rank;
-- and synthesize findings.
+## 14. Security, Control, and Approval
 
-## 12. Writing
+- **Untrusted input handling:** Orchestra treats all of the following as untrusted data:
+  - prompts and attachments;
+  - uploads and archives;
+  - repositories, URLs, and tool output.
+  
+  Controls run in deterministic code: file validation, safe archive extraction, path containment, safe URL fetching, and credential redaction before content reaches models or logs. Retrieved content can't instruct or authorize actions.
+- **Human approval gates:**
+  - simple work stays autonomous;
+  - large deliverables run as a phased plan with checkpoints set by a Guided, Balanced, or Autonomous preference;
+  - spending, publishing, destructive steps, and unresolved agent disagreement always wait for approval;
+  - gates survive restarts and never resume on their own.
+- **Cost control:** paid generation follows the user's cost policy and is never triggered by a background health check.
 
-Structured writing workflows can produce long-form professional content.
+## 15. Reliability
 
-## 13. Browser Game Generation
+- **Crash recovery:** chats and projects are stored on the server and recovered after a browser crash or reload. Deleting a chat removes it everywhere.
+- **Backend supervision:** the launcher restarts a backend that exits. The interface shows a reconnecting state, a real outage with its cause, and retry and restart options.
+- **Long-running sessions:** hidden tabs stop polling, and recoverable interface errors can be fixed without losing the chat.
+- **Start and stop:** startup reuses healthy services and shutdown stops everything Orchestra launched. Tools the user runs separately are never stopped.
 
-A plain-language idea can be converted into a complete playable browser game.
+## 16. Integrations
 
-One supported approach uses Phaser.js.
+- Optional Slack integration for outbound updates and standups.
 
-## 14. Asset Intelligence
+## 17. Production Orchestration
 
-Orchestra includes an asset-knowledge layer designed to make game assets reusable and relational rather than treating every generated image as an isolated file.
+The larger objective is to connect all of these capabilities so a user can pursue a production goal, not switch manually between disconnected AI tools.
 
-The system can:
-
-- identify entities;
-- group visual variants;
-- recognize animation families;
-- create sprite sheets;
-- retain palette and reference information;
-- and generate metadata for game-engine use.
-
-## 15. Unified Visual Generation
-
-Orchestra can classify visual requests into game-relevant categories such as:
-
-- sprite;
-- animation;
-- object;
-- environment;
-- cinematic;
-- and game scene.
-
-It can then route the request through the appropriate generation workflow.
-
-## 16. Game Engine and MCP Bootstrap
-
-Orchestra can detect missing dependencies for game-engine workflows and help bootstrap required integrations.
-
-Supported workflows may include tools such as:
-
-- Unity;
-- Blender;
-- Unreal;
-- MCP bridges;
-- and related development dependencies.
-
-## 17. Project Execution Engine
-
-The Project Execution Engine, or PEX, is a persistent runtime for long-running work.
-
-Major coding, game-development, or multi-agent requests can become resumable projects with:
-
-- checkpoints;
-- watchdog recovery;
-- persistent disk state;
-- and auto-resume behavior.
-
-This is critical because production work frequently lasts longer than a single chat response.
-
-## 18. Production Orchestration
-
-The larger objective is to connect all of these capabilities so a user can pursue a production goal rather than manually switching between disconnected AI tools.
+Orchestra plans the work, assigns persistent AI teams, uses local and optional cloud models and tools, validates and repairs the output, keeps project state across restarts, and reports progress from evidence.
