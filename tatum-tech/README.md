@@ -68,6 +68,10 @@ Orchestra is becoming a major part of the Tatum Tech production model.
 
 It is designed to help participants move from idea to playable and production-ready game faster by coordinating AI models, agents, tools, assets, project state, and game-development workflows.
 
+## Funding Model
+
+Tatum Tech's mission is educational. The program can be funded through grants, school district partnerships, afterschool programs, workforce-development funding, and institutional contracts. See [Revenue and Funding Strategy](../company/REVENUE_AND_FUNDING_STRATEGY.md).
+
 ## Read Next
 
 - [Program Model](program-model.md)

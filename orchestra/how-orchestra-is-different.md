@@ -64,6 +64,14 @@ Continue
 Production Output
 ```
 
+## Local-First
+
+Orchestra can run entirely on local models on the user's own workstation, with no cloud key required. Cloud providers are optional and are chosen by the capability a task needs, not by vendor. A request for local generation is never moved to a paid cloud provider without the user's say.
+
+## Evidence-Based Progress
+
+Orchestra reports progress from evidence: files on disk, validated deliverables, playtests, and completion gates. A build with required work still open is never reported as complete, and a placeholder is never presented as the result.
+
 ## Persistent Projects
 
 One of Orchestra's most important design goals is persistence.
@@ -84,6 +92,8 @@ Orchestra is also being built with game development in mind.
 Games require many different production disciplines.
 
 Orchestra can coordinate code, assets, music, sound, UI, game research, engine workflows, testing, and other production tasks as parts of one project.
+
+A game build moves through a team loop: a designer writes the design, an architect plans it, a developer builds it slice by slice, QA playtests each slice in a headless browser, and a repair agent fixes what QA finds.
 
 ## Orchestra Does Not Need to Replace LLMs
 

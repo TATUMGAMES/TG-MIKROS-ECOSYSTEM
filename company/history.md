@@ -16,15 +16,15 @@ That question became the foundation for MIKROS.
 
 Tatum Games secured a $600,000 angel investment commitment in 2021.
 
-The investment was milestone-based rather than released all at once.
+The investment was milestone-based rather than received all at once.
 
-An initial $200,000 was released in 2021.
+An initial $200,000 was received in 2021.
 
-Tatum Games then worked through the required product and company milestones.
+Tatum Games then worked through the agreed milestones.
 
 ## 2022 — Milestones Completed
 
-After Tatum Games successfully completed the required milestones, the remaining $400,000 of the 2021 investment commitment was released at the end of 2022.
+After Tatum Games satisfied the agreed milestones, the remaining $400,000 was received in 2022. The full $600,000 was received across 2021 and 2022.
 
 During the pre-launch period, MIKROS remained private.
 
@@ -37,6 +37,10 @@ Tatum Games used that feedback to refine MIKROS before public launch.
 MIKROS publicly launched in April 2023.
 
 MIKROS was designed to move game analytics beyond isolated dashboards by creating an information-sharing ecosystem where participating developers could benefit from broader, anonymized behavioral context and comparative intelligence.
+
+## Additional Angel Investment
+
+Tatum Games also received an additional $185,000 in angel investment. The date of this investment is not specified in the canonical record. See [Funding and Investment History](FUNDING_AND_INVESTMENT_HISTORY.md).
 
 ## 2024 — Tatum Tech Begins
 
@@ -52,7 +56,6 @@ In 2025:
 
 - Tatum Tech evolved into an ongoing workforce-development and game-production program.
 - By October 2025, Tatum Tech had been formalized into a 16-week, two-cohort-per-year production model.
-- Tatum Games raised an additional $185,000 in angel investment.
 - The company continued developing MIKROS Marketing, MIKROS AI, community distribution, and broader ecosystem infrastructure.
 - Tatum Games expanded relationships across gaming, technology, education, workforce development, community organizations, and corporate partners.
 
@@ -66,5 +69,6 @@ In 2026, Tatum Games expanded several major areas:
 - Orchestra expanded into a full AI orchestration and production environment.
 - Tatum Tech continued its 16-week production model and began integrating Orchestra to accelerate game creation.
 - The Tatum Tech mobile app extended learning, participation tracking, networking, opportunity discovery, and engagement beyond in-person programming.
+- On September 30, 2026, Tatum Games was awarded a $5,000 grant through the 2026 Fueling Emerging Entrepreneurs Grant Program.
 
 The company continues to operate around the same core thesis: independent developers need infrastructure, not just software features.
