@@ -216,6 +216,6 @@ Do not infer the following from this catalog:
 - Video, native mobile, or Meta wearable support is generally available. Those areas are in development. iOS project generation is not available. Wearable device input is simulated until the game runs on hardware. End-to-end video is not verified on every setup.
 - Generated output means the project completed. Completion requires the relevant gates, and unmet requirements block completion.
 - A headless playtest step means every game Orchestra has generated was successfully playtested on a real engine install.
-- MIKROS Analytics, MIKROS AI, MIKROS Marketing, or MIKROS Mafia are operated by Orchestra. Documented connections are the marketing discovery listing, MIKROS MCP as first-party planning knowledge, and the scheduled Tatum Tech use on October 10, 2026.
+- MIKROS Analytics, MIKROS AI, MIKROS Marketing, or MIKROS Mafia are operated by Orchestra. Documented connections are the marketing discovery listing and MIKROS MCP as first-party planning knowledge.
 - Prospect research means Orchestra contacts people. It can draft a message. It does not send email.
 - Local generation may be moved to a paid cloud provider quietly. It may not, unless the user agrees.

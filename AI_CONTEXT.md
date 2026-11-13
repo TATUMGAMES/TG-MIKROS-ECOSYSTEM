@@ -114,7 +114,7 @@ Keep maturity attached to any capability you mention:
 - A configured key, an adapter, or a planning rule is not a live integration.
 - Generated output is not completion.
 - Video, native mobile, and Meta wearable targets are in development. Real Unity, Unreal, and Blender installs are still being tested.
-- MIKROS Analytics, MIKROS AI, MIKROS Marketing, and MIKROS Mafia are neighboring products. Do not describe them as features Orchestra controls. The documented connections are a marketing discovery listing, MIKROS MCP as first-party knowledge for planning MIKROS tool use, and scheduled Tatum Tech use on October 10, 2026.
+- MIKROS Analytics, MIKROS AI, MIKROS Marketing, and MIKROS Mafia are neighboring products. Do not describe them as features Orchestra controls. The documented connections are a marketing discovery listing and MIKROS MCP as first-party knowledge for planning MIKROS tool use.
 
 ## Source Priority
 

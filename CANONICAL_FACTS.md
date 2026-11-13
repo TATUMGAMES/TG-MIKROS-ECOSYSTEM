@@ -91,7 +91,6 @@ Identity and architecture: [Orchestra](orchestra/README.md), [Architecture](orch
 - Video, native mobile, and Meta wearable targets are in development. iOS project generation is not available. Real engine installs are still being tested. Browser game generation does not require an external engine.
 - Generated output is not completion. Unmet requirements block project completion.
 - Orchestra does not send email or contact prospects on the user's behalf.
-- Orchestra is becoming a core technology inside Tatum Tech. Participants are scheduled to use Orchestra during the October 10, 2026 Tatum Tech cycle. That use is scheduled, not a completed rollout.
 - Documented connections to the rest of the ecosystem are limited. MIKROS Marketing can list a game in Orchestra AI's discovery database. Orchestra treats MIKROS MCP as first-party knowledge when planning MIKROS tool use. MIKROS Analytics, MIKROS AI, MIKROS Marketing, and MIKROS Mafia are not modules that Orchestra operates.
 - Tatum Games intends to commercialize Orchestra through subscriptions and usage-based pricing. That is one revenue channel among several, not realized revenue by itself.
 

@@ -61,7 +61,7 @@ Tatum Tech continues to operate as a production-based workforce-development prog
 
 The current model serves approximately 500–600 participants annually across two cohorts.
 
-The October 10, 2026 Tatum Tech cycle is scheduled to include Orchestra as a major AI production tool for participants.
+Hundreds of Tatum Tech 2026 participants used and tested Orchestra. Feedback was positive, and the program learned from the prompts participants used.
 
 ## Long-Term Objective
 

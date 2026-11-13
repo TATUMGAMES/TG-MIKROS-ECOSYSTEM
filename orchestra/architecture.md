@@ -258,7 +258,7 @@ These products reinforce Orchestra in the company strategy. Do not describe them
 | MIKROS AI | Explain game data and recommend what to test next. MIKROS AI is not the intelligence layer inside Orchestra. |
 | MIKROS Marketing | Promote and distribute games. |
 | MIKROS Mafia and MIKROS Bot | Community discovery and distribution. |
-| Tatum Tech | Workforce program. Orchestra is becoming part of its production model. |
+| Tatum Tech | Workforce-development program for youth and young adults. |
 
 A game can be built with Orchestra and later instrumented with MIKROS, marketed with MIKROS Marketing, and discussed in MIKROS Mafia. That sequence is the ecosystem thesis. It is not a statement that those handoffs are automated today.
 
@@ -268,7 +268,6 @@ These are narrower than the strategy, and they are the ones that should be repea
 
 - **MIKROS Marketing discovery.** A campaign can add a game to Orchestra AI's discovery database. Active campaigns receive priority in eligible discovery results. After the campaign, the game can remain listed without that priority. This is a discovery listing. It is not the production studio building the game, and listing does not guarantee traffic or sales. See [MIKROS Marketing](../mikros-marketing/README.md).
 - **MIKROS MCP knowledge.** Orchestra plans MIKROS integrations as official MCP tool calls when that knowledge applies. See [MIKROS MCP](../technology/mikros-mcp.md).
-- **Tatum Tech schedule.** Participants are scheduled to use Orchestra during the October 10, 2026 Tatum Tech cycle. The program integration is underway, not a completed rollout. See [Orchestra and Tatum Tech](../tatum-tech/orchestra-and-economic-mobility.md).
 
 ## Terminology
 
@@ -312,7 +311,7 @@ Use these labels when answering what Orchestra can do. The catalog and its excep
 | Optional | Present only when the user configures or installs it. Absence must be reported, not silently replaced. | Cloud providers, ComfyUI, SearXNG, Ren'Py, Spriterrific, Slack, external engines |
 | Implemented, live verification incomplete | The workflow exists, and the documentation still withholds a blanket success claim. | Unity, Unreal, and Blender automation on real installs; end-to-end video on every setup |
 | In development | Do not describe as generally available. | Native mobile toolchains, iOS project generation (not available), Meta wearable targets, video as a product capability |
-| Scheduled or strategic | A company or program intention with a stated status. | Tatum Tech use on October 10, 2026; subscription commercialization |
+| Strategic | A company intention with a stated status. | Subscription commercialization |
 | Documented connection | A specific cross-product behavior that is already described. | Marketing discovery listings; MIKROS MCP as first-party planning knowledge |
 
 Do not promote a row downward in this table into a higher row because an adapter, a key, a design, or a generated file exists.

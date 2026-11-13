@@ -68,9 +68,9 @@ Portfolio / Publishing / Career / Entrepreneurship
 
 ## Why the Ecosystem Matters
 
-The objective is to give developers more of the infrastructure required to build, understand, market, distribute, and improve games. An analytics dashboard alone does not do that.
+The objective is to give developers more of the infrastructure required to build, understand, market, distribute, and improve games.
 
-That is why MIKROS Analytics, MIKROS Marketing, MIKROS Mafia, Orchestra, and Tatum Tech sit in one lifecycle.
+That is why MIKROS Analytics, MIKROS Marketing, MIKROS Mafia, Orchestra, and Tatum Tech reinforce one another.
 
 ## Orchestra's place
 
@@ -82,12 +82,11 @@ The neighboring products do different jobs:
 - MIKROS AI explains game data and supports the next decision.
 - MIKROS Marketing promotes games and handles discovery campaigns.
 - MIKROS Mafia and MIKROS Bot connect community distribution.
-- Tatum Tech trains emerging creators and is bringing Orchestra into its production model.
+- Tatum Tech trains emerging creators through game production.
 
 A lifecycle relationship is not a live integration. The connections that are actually documented are:
 
 - MIKROS Marketing can place a game in Orchestra AI's discovery database, with priority during an active campaign and a listing afterward without that priority.
 - Orchestra treats MIKROS MCP as first-party knowledge when it plans MIKROS tool use.
-- Tatum Tech participants are scheduled to use Orchestra during the October 10, 2026 cycle.
 
 Do not describe the other products as features inside Orchestra, or Orchestra as a control panel for MIKROS.

@@ -12,7 +12,7 @@ The Tatum Games ecosystem includes:
 - **MIKROS Marketing** — a game promotion and discovery system that combines algorithm-guided advertising with community, app, web, AI-discovery, and event channels across the ecosystem.
 - **MIKROS Mafia** — the community and discovery layer connecting developers, studios, games, creators, and players.
 - **Tatum Tech** — a workforce-development and game-production program for youth and young adults.
-- **Orchestra AI** — Tatum Games' autonomous AI production studio. It coordinates models, agents, tools, and persistent projects to turn ideas into digital products. Game development is a specialization, not the limit of the product. See [Orchestra](orchestra/README.md).
+- **Orchestra AI** — Tatum Games' locally deployable, multi-agent AI production studio for researching, creating, developing, and managing digital projects, including games. It coordinates models, agents, tools, and persistent projects so work can continue beyond a single reply. See [Orchestra](orchestra/README.md).
 - **MIKROS AI, MIKROS MCP, and MIKROS Bot** — technologies that extend the broader MIKROS ecosystem.
 
 ## Why This Repository Exists
@@ -68,7 +68,7 @@ More Players + More Data + More Opportunity
 
 Orchestra is the creation and production layer in that lifecycle. MIKROS Analytics, MIKROS AI, MIKROS Marketing, and MIKROS Mafia cover understanding, decisions, reach, and community. Those roles reinforce one another as an ecosystem. They are not a claim that every product currently has a live integration with Orchestra. Documented connections are stated in the [Orchestra architecture](orchestra/architecture.md#place-in-the-mikros-ecosystem).
 
-Tatum Tech extends this system into workforce development by helping emerging creators learn, build, publish, and enter the game industry using the same broader ecosystem. Orchestra is becoming part of that production model.
+Tatum Tech extends this system into workforce development by helping emerging creators learn, build, publish, and enter the game industry using the same broader ecosystem.
 
 ## Business Model, Funding & Investment
 

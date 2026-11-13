@@ -64,9 +64,9 @@ The model is production-first and designed to create:
 
 ## Orchestra
 
-Orchestra is becoming a major part of the Tatum Tech production model.
+Orchestra is part of the Tatum Tech production model.
 
-It is Tatum Games' production environment. Inside this program it is meant to help participants move from idea to playable and production-ready game faster by coordinating models, agents, tools, assets, project state, and game-development workflows. Participants are scheduled to use it during the October 10, 2026 cycle. That use is scheduled, not a completed rollout.
+It is designed to help participants move from idea to playable and production-ready game faster by coordinating AI models, agents, tools, assets, project state, and game-development workflows.
 
 See [Orchestra](../orchestra/README.md) and [Orchestra and Economic Mobility](orchestra-and-economic-mobility.md).
 

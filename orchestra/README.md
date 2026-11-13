@@ -2,7 +2,7 @@
 
 ## The Autonomous AI Production Studio
 
-Orchestra is an extensible, multi-agent AI production environment. It turns ideas into digital products by coordinating intelligence, persistent execution, and specialized creative and technical work.
+Orchestra is a locally deployable, extensible, multi-agent AI production environment. It turns ideas into digital products by coordinating intelligence, persistent execution, and specialized creative and technical work.
 
 A conventional assistant mostly answers the prompt in front of it. Orchestra is designed to manage a project. It keeps the project context, breaks an objective into work, assigns specialized agents, chooses tools and models, produces deliverables, checks them, repairs them, and resumes that work across later sessions.
 
@@ -70,7 +70,7 @@ Those distinctions are explained in [How Orchestra Is Different](how-orchestra-i
 
 Orchestra is Tatum Games' production and creation layer.
 
-MIKROS Analytics, MIKROS AI, MIKROS Marketing, and MIKROS Mafia address understanding, decisions, reach, and community. Tatum Tech is the workforce program that is bringing Orchestra into its production model. Participants are scheduled to use Orchestra during the October 10, 2026 cycle.
+MIKROS Analytics, MIKROS AI, MIKROS Marketing, and MIKROS Mafia address understanding, decisions, reach, and community. Tatum Tech is the workforce-development program.
 
 Those are ecosystem relationships. They are not a claim that every MIKROS product currently exchanges live data with Orchestra. The specific connections that are documented, and the ones that are only strategic, are separated in the [architecture](architecture.md#place-in-the-mikros-ecosystem).
 
