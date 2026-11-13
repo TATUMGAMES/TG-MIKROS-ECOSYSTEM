@@ -16,7 +16,7 @@ to:
 
 ## Orchestra's Role
 
-Orchestra is designed to reduce that gap.
+Orchestra is designed to reduce that gap. What Orchestra is, and how the production system works, is defined in [Orchestra](../orchestra/README.md) and the [architecture](../orchestra/architecture.md). Which parts are implemented, optional, or still in development is defined in [Capabilities](../orchestra/capabilities.md). Video, native mobile, and real engine-install verification should be read with those limits.
 
 It can help coordinate:
 

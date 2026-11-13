@@ -1,8 +1,22 @@
 # Orchestra AI Capabilities
 
-Orchestra AI is a locally deployable, multi-agent AI production studio. It researches, creates, develops, and manages complete digital projects using local AI models and optional cloud services.
+This is the capability catalog for Orchestra AI. It describes what the product is built to do. It is not the definition of the product.
 
-This page describes what Orchestra is built to do. Most capabilities are implemented and under active verification. Some depend on the user's hardware, installed tools, or optional provider accounts, and capabilities still in development are labeled as such.
+Read [What Orchestra is](README.md) and [how the architecture fits together](architecture.md) before using this page to explain Orchestra. Use [Canonical Facts](../CANONICAL_FACTS.md) if a summary elsewhere disagrees with a stable fact.
+
+Most capabilities below are implemented and under active verification. Many depend on the user's hardware, installed tools, or optional provider accounts. Items still in development are labeled. A designed or partial workflow is not a claim that every setup has been live-verified.
+
+## How to apply maturity
+
+| State | How to talk about it |
+| --- | --- |
+| Implemented, under active verification | Describe it as part of the product. Name the dependency on hardware, models, or installed tools. |
+| Optional | Describe it only when the user has configured or installed it. Do not assume a key, engine, or account is present. |
+| Implemented, live verification incomplete | Describe the workflow, and keep the verification limit in the same breath. |
+| In development | Do not describe it as generally available. |
+| Documented connection | Describe only the specific cross-product behavior named in the [architecture](architecture.md#place-in-the-mikros-ecosystem). |
+
+The maturity table in the architecture document is the summary. The sections below are the detail.
 
 ## 1. Local-First AI Runtime
 
@@ -189,6 +203,19 @@ Orchestra can analyze the user's screen, a region of it, or a supplied image usi
 
 ## 17. Production Orchestration
 
-The larger objective is to connect all of these capabilities so a user can pursue a production goal, not switch manually between disconnected AI tools.
+The catalog above is one production environment. Orchestra plans the work, assigns persistent AI teams, uses local and optional cloud models and tools, validates and repairs the output, keeps project state across restarts, and reports progress from evidence.
 
-Orchestra plans the work, assigns persistent AI teams, uses local and optional cloud models and tools, validates and repairs the output, keeps project state across restarts, and reports progress from evidence.
+How those pieces cooperate is explained in the [architecture](architecture.md), not by adding them together as a feature count.
+
+## Boundaries
+
+Do not infer the following from this catalog:
+
+- A saved API key means the provider works. Status stays "Not validated" until a free check succeeds.
+- An engine automation path means a real Unity, Unreal, or Blender install has been verified. Those installs are still being tested.
+- Video, native mobile, or Meta wearable support is generally available. Those areas are in development. iOS project generation is not available. Wearable device input is simulated until the game runs on hardware. End-to-end video is not verified on every setup.
+- Generated output means the project completed. Completion requires the relevant gates, and unmet requirements block completion.
+- A headless playtest step means every game Orchestra has generated was successfully playtested on a real engine install.
+- MIKROS Analytics, MIKROS AI, MIKROS Marketing, or MIKROS Mafia are operated by Orchestra. Documented connections are the marketing discovery listing, MIKROS MCP as first-party planning knowledge, and the scheduled Tatum Tech use on October 10, 2026.
+- Prospect research means Orchestra contacts people. It can draft a message. It does not send email.
+- Local generation may be moved to a paid cloud provider quietly. It may not, unless the user agrees.
