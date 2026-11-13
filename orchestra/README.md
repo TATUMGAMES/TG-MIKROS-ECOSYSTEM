@@ -1,105 +1,97 @@
 # ORCHESTRA AI
 
-## Your locally deployable AI production studio.
+## The Autonomous AI Production Studio
 
-An intelligent, multi-agent platform that researches, creates, develops and manages complete digital projects using local AI models and optional cloud services.
+Orchestra is a locally deployable, extensible, multi-agent AI production environment. It turns ideas into digital products by coordinating intelligence, persistent execution, and specialized creative and technical work.
 
-**One platform. Multiple creative studios. Persistent AI teams.**
+A conventional assistant mostly answers the prompt in front of it. Orchestra is designed to manage a project. It keeps the project context, breaks an objective into work, assigns specialized agents, chooses tools and models, produces deliverables, checks them, repairs them, and resumes that work across later sessions.
 
----
+The work can be software, a game, research, design, documentation, media, or another digital production. Game development is an important specialization for Tatum Games. It is not the boundary of the product.
 
-Orchestra AI is Tatum Games' AI orchestration and production platform. It can be deployed locally to run supported production workflows on local models and infrastructure, with optional cloud services that can enhance supported workflows. Not every feature runs fully offline, and cloud services are not required for every deployment.
+Orchestra is built for local and cloud AI infrastructure. Users choose providers, execution environments, permissions, and how much of a workflow may proceed without stopping for approval. Autonomy here means controlled execution. Spending, publishing, destructive operations, and unresolved disagreements wait for a person.
 
-Orchestra is not limited to game development. Its architecture supports multiple categories of digital creation and production, and it maintains project context while coordinating specialized AI agents across ongoing work.
+At its core, Orchestra combines three things that usually live apart: model intelligence, the coordination of a production team, and the infrastructure of a digital studio.
 
-It is designed to help users move from an idea to complex, persistent, multi-step production outputs by coordinating models, agents, tools, assets, project state, validation systems, and execution workflows.
+TatumBOT is the conversational interface inside Orchestra. It is not a separate product. Language models supply reasoning and generation. They are not Orchestra itself.
 
-Orchestra is not merely a chatbot.
+## Who it is for
 
-## Core Idea
+Orchestra is for people and teams who need a project carried from intent to a checked deliverable, including:
 
-A conventional AI conversation often looks like:
+- independent developers and small studios;
+- Tatum Tech participants learning production by shipping work;
+- operators who want local models, optional cloud models, and explicit control over cost and permissions;
+- partners and researchers who need an accurate picture of how the system is designed to work.
+
+## What a production studio means here
+
+A production studio is a practical description of the architecture, not a slogan.
+
+A single project can require research, a plan, specialized design and implementation, files and assets, testing, documentation, repair, and a deliverable someone can actually open. Those responsibilities normally sit in different people, applications, and handoffs. Orchestra is designed to coordinate them inside one project, with shared context and a record of what was produced.
+
+The intended path is:
 
 ```text
-Prompt
+User intent
   ↓
-Model
+Project understanding
   ↓
-Response
-```
-
-Orchestra is designed around a larger workflow:
-
-```text
-Goal
+Planning
   ↓
-Plan
+Specialized agent coordination
   ↓
-Agents + Models + Tools
+Tool and model selection
   ↓
-Files + Assets + Code + Research
+Execution and artifact creation
   ↓
 Validation
   ↓
-Repair
+Repair and iteration
   ↓
-Persistent Project State
+Verified deliverables
   ↓
-Playable / Production Output
+Persistent project state
 ```
 
-## Capabilities at a Glance
+A model response can happen at several of those steps. A response is not the project. Completion depends on evidence: files, validated deliverables, and completion gates. Open required work is not reported as finished, and a placeholder is not presented as the result.
 
-- **Local-first runtime:** runs on local models with no cloud key, with optional cloud providers chosen by capability rather than vendor.
-- **Research and writing:** multi-query web research with source checking, grants research, game and market research, grant proposals, and document export.
-- **Coding:** an AI coding team with deterministic validation, quality gates, repair loops, and reviewable changes.
-- **Persistent AI teams:** project-specific agents, a unified project lifecycle, background jobs, checkpoints, and auto-resume.
-- **Game development:** structured game understanding, a designer → architect → developer → QA → repair loop with headless playtesting, browser games, engine automation for Unity, Unreal, and Blender, and MIKROS MCP integration.
-- **Media:** images, visual assets, sprites, text-to-3D, UI/UX mockups, comics, speech, sound, music, and video (in development).
-- **Control and safety:** untrusted-input handling, human approval gates for spending, publishing, and destructive steps, and honest progress reporting.
+## What Orchestra is not
 
-See [Capabilities](capabilities.md) for the full list.
+- It is not a chatbot that happens to have tools attached.
+- It is not a set of independent agents with no shared project.
+- It is not a foundation model or a model vendor.
+- It is not only a game generator.
+- It is not a prompt script.
+- It is not a bag of unrelated AI features.
 
-## TatumBOT
+Those distinctions are explained in [How Orchestra Is Different](how-orchestra-is-different.md) and in the [architecture](architecture.md).
 
-TatumBOT is the assistant experience inside Orchestra.
+## Where it sits in the ecosystem
 
-TatumBOT is intended to be helpful, grounded, professional, and conversational while orchestrating the broader system behind it.
+Orchestra is Tatum Games' production and creation layer.
 
-## Game Development
+MIKROS Analytics, MIKROS AI, MIKROS Marketing, and MIKROS Mafia address understanding, decisions, reach, and community. Tatum Tech is the workforce-development program.
 
-Game development is one of the production areas Orchestra supports, and it is especially important to Tatum Games because game development is inherently multi-modal.
+Those are ecosystem relationships. They are not a claim that every MIKROS product currently exchanges live data with Orchestra. The specific connections that are documented, and the ones that are only strategic, are separated in the [architecture](architecture.md#place-in-the-mikros-ecosystem).
 
-A game may require:
+Commercialization is planned through subscriptions and usage-based pricing. Orchestra is one Tatum Games revenue channel among several. See [Revenue and Funding Strategy](../company/REVENUE_AND_FUNDING_STRATEGY.md).
 
-- code;
-- design;
-- images;
-- animation;
-- music;
-- sound;
-- writing;
-- UI;
-- research;
-- testing;
-- project management;
-- engine integration;
-- and iterative repair.
+## How to read the Orchestra documents
 
-Orchestra is designed to coordinate those workflows instead of treating each output as a separate disconnected prompt.
+| Document | Role |
+| --- | --- |
+| This file | What Orchestra is, who it is for, and how to tell it apart from an assistant |
+| [Architecture](architecture.md) | How orchestration, context, models, tools, validation, recovery, and approval work together |
+| [Capabilities](capabilities.md) | What the product is built to do, with maturity and verification labels |
+| [How Orchestra Is Different](how-orchestra-is-different.md) | The category difference from a general-purpose assistant |
+| [Canonical Facts](../CANONICAL_FACTS.md) | Stable facts that should win if another page drifts |
 
-## Tatum Tech
+Capability claims belong in the capability catalog, with their verification state. This page does not treat a designed workflow as proof that every deployment has been live-verified.
 
-Orchestra is becoming a major production layer inside Tatum Tech.
+## Read next
 
-The objective is to reduce the time required for participants to move from 0 → 1 while increasing the number of playable, polished, portfolio-ready, and potentially publishable games produced during each cohort.
-
-## Commercialization
-
-Tatum Games intends to commercialize Orchestra through subscriptions and usage-based pricing. Orchestra is one of several Tatum Games revenue channels. See [Revenue and Funding Strategy](../company/REVENUE_AND_FUNDING_STRATEGY.md).
-
-## Read Next
-
+- [Architecture](architecture.md)
 - [Capabilities](capabilities.md)
 - [How Orchestra Is Different](how-orchestra-is-different.md)
-- [Tatum Tech Integration](../tatum-tech/orchestra-and-economic-mobility.md)
+- [Ecosystem](../company/ecosystem.md)
+- [Orchestra and Tatum Tech](../tatum-tech/orchestra-and-economic-mobility.md)

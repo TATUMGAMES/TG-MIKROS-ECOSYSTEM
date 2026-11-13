@@ -1,6 +1,6 @@
 # Orchestra, Tatum Tech, and Economic Mobility
 
-Orchestra is becoming a core production technology inside Tatum Tech.
+Orchestra is a production technology inside Tatum Tech.
 
 ## The Production Problem
 
@@ -16,7 +16,7 @@ to:
 
 ## Orchestra's Role
 
-Orchestra is designed to reduce that gap.
+Orchestra is designed to reduce that gap. What Orchestra is, and how the production system works, is defined in [Orchestra](../orchestra/README.md) and the [architecture](../orchestra/architecture.md). Which parts are implemented, optional, or still in development is defined in [Capabilities](../orchestra/capabilities.md). Video, native mobile, and real engine-install verification should be read with those limits.
 
 It can help coordinate:
 
@@ -53,11 +53,11 @@ A participant who can move from concept to playable output faster has more oppor
 - test a commercial idea;
 - or create an income-generating digital asset.
 
-## October 10, 2026
+## Tatum Tech 2026
 
-Participants at the October 10, 2026 Tatum Tech cycle are scheduled to use Orchestra.
+Hundreds of Tatum Tech 2026 participants used and tested Orchestra. Feedback was positive, and the program learned from the prompts participants used.
 
-This represents an important evolution in the program: AI becomes production infrastructure rather than a standalone classroom topic.
+That use treated AI as production infrastructure rather than a standalone classroom topic.
 
 ## Relationship to MIKROS
 

@@ -78,14 +78,21 @@ Canonical record: [Funding and Investment History](company/FUNDING_AND_INVESTMEN
 
 ## Orchestra
 
-- Orchestra is a major Tatum Games AI product.
-- Orchestra is not merely a chatbot.
-- Orchestra is an AI orchestration and production environment built to coordinate models, agents, tools, project state, assets, validation systems, and execution workflows.
-- Orchestra AI is positioned as a locally deployable, multi-agent AI production studio that researches, creates, develops, and manages complete digital projects using local AI models and optional cloud services. See [Orchestra](orchestra/README.md).
-- Orchestra can run entirely on local models with no cloud key. Cloud providers are optional.
-- Orchestra is not limited to game development. For games, it is designed to reduce the time required to move from a game idea toward a playable or production-ready game.
-- Orchestra is becoming a core technology inside Tatum Tech.
-- Tatum Tech participants are scheduled to use Orchestra during the October 10, 2026 Tatum Tech cycle.
+Identity and architecture: [Orchestra](orchestra/README.md), [Architecture](orchestra/architecture.md). Capability status: [Capabilities](orchestra/capabilities.md).
+
+- Orchestra AI is a major Tatum Games product and the ecosystem's production and creation layer.
+- Orchestra is an autonomous AI production studio: an extensible, multi-agent production environment that coordinates models, agents, tools, project state, validation, and execution to produce digital deliverables.
+- TatumBOT is the conversational interface inside Orchestra. It is not a separate product.
+- Language models supply intelligence. Orchestra is not a foundation model or a model vendor.
+- Orchestra can run supported workflows on local models with no cloud key. Cloud providers are optional. A request for local generation is not moved to a paid cloud provider without the user's agreement.
+- A saved provider key is not evidence that the provider works until Orchestra's free validation check succeeds.
+- Game development is an important specialization, not the limit of the product. For games, Orchestra is designed to reduce the time from an idea toward a playable or production-ready game.
+- Orchestra has built complete games on a single workstation using only local models. That fact does not by itself verify real Unity, Unreal, or Blender installs, video, or native mobile builds.
+- Video, native mobile, and Meta wearable targets are in development. iOS project generation is not available. Real engine installs are still being tested. Browser game generation does not require an external engine.
+- Generated output is not completion. Unmet requirements block project completion.
+- Orchestra does not send email or contact prospects on the user's behalf.
+- Documented connections to the rest of the ecosystem are limited. MIKROS Marketing can list a game in Orchestra AI's discovery database. Orchestra treats MIKROS MCP as first-party knowledge when planning MIKROS tool use. MIKROS Analytics, MIKROS AI, MIKROS Marketing, and MIKROS Mafia are not modules that Orchestra operates.
+- Tatum Games intends to commercialize Orchestra through subscriptions and usage-based pricing. That is one revenue channel among several, not realized revenue by itself.
 
 ## Google Relationship
 
